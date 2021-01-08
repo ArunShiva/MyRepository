@@ -66,7 +66,7 @@ public class WebAppControllerTest {
 
 		when(retriveUserDetails.retriveUserDetails()).thenReturn(userList);
 
-		mockMvc.perform(get("/services/getUserList").contentType(MediaType.APPLICATION_JSON).accept("application/json"))
+		mockMvc.perform(get("/services/getAllUserList").contentType(MediaType.APPLICATION_JSON).accept("application/json"))
 				.andExpect(status().is(200)).andExpect(jsonPath("$.status", Matchers.is("Success")));
 
 	}
