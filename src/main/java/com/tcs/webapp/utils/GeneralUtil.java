@@ -38,5 +38,14 @@ public final class GeneralUtil {
 		return true;
 
 	}
+	
+	public boolean isNotEmptyObject(final Object ob) {
+
+		if (ob == null){
+			return false;
+		}
+		return true;
+
+	}
 
 }

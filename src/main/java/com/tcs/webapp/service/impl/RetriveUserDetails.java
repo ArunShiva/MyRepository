@@ -16,13 +16,13 @@ public class RetriveUserDetails implements IRetriveUserDetails {
 
 		List<UserDetails> userList= new ArrayList<UserDetails>();
 		
-		/*UserDetails user1 = new UserDetails("1", "Arun", "Chennai", "arun@gmail.com");
-		UserDetails user2 = new UserDetails("2", "Ajith", "Chennai", "arun@gmail.com");
-		UserDetails user3 = new UserDetails("3", "Arjith", "Chennai", "arun@gmail.com");
+		UserDetails user1 = new UserDetails("1", "Sam", "Chennai", "sam@gmail.com");
+		UserDetails user2 = new UserDetails("2", "Tom", "Kochi", "tom@gmail.com");
+		UserDetails user3 = new UserDetails("3", "John", "Coimbatore", "john@gmail.com");
 		
 		userList.add(user1);
 		userList.add(user2);
-		userList.add(user3);*/
+		userList.add(user3);
 		
 		return userList;
 	}
