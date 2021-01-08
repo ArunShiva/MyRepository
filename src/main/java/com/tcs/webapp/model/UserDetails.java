@@ -7,6 +7,10 @@ public class UserDetails {
 	private String address;
 	private String emailId;
 	
+	public UserDetails() {
+		super();
+	}
+	
 	public UserDetails(String id, String name, String address, String emailId) {
 		super();
 		this.id = id;
