@@ -1,8 +1,11 @@
 package com.tcs.webapp.service.impl;
 
+import org.springframework.stereotype.Service;
+
 import com.tcs.webapp.model.UserDetails;
 import com.tcs.webapp.service.IDeleteUserDetails;
 
+@Service
 public class DeleteUserDetails implements IDeleteUserDetails {
 
 	@Override
