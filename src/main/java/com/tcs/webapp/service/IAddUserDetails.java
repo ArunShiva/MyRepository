@@ -4,5 +4,5 @@ import com.tcs.webapp.model.UserDetails;
 
 public interface IAddUserDetails {
 
-	public UserDetails addUserDetails(UserDetails user);
+	public UserDetails addUserDetails(String id,String name, String address, String emailId);
 }

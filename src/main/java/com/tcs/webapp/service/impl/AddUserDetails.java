@@ -9,9 +9,9 @@ import com.tcs.webapp.service.IAddUserDetails;
 public class AddUserDetails implements IAddUserDetails {
 
 	@Override
-	public UserDetails addUserDetails(UserDetails user) {
+	public UserDetails addUserDetails(String id,String name, String address, String emailId) {
 		// TODO Auto-generated method stub
-		UserDetails user1 = new UserDetails(user.getId(), user.getName(), user.getAddress(), user.getEmailId());
+		UserDetails user1 = new UserDetails(id,name,address,emailId);
 		return user1;
 	}
 

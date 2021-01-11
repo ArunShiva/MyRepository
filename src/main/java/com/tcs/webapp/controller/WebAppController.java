@@ -75,7 +75,7 @@ public class WebAppController extends BaseResponse{
 		
 		if(GeneralUtil.getInstance().isNotEmptyObject(user)) {
 			response.setStatus(GeneralConstants.SUCCESS_STATUS);
-			response.setData(user);
+			response.setData("User Updated Successfully");
 			
 		}else {
 			response.setStatus(GeneralConstants.ERROR_STATUS);
@@ -90,16 +90,16 @@ public class WebAppController extends BaseResponse{
 	@CrossOrigin
 	@ResponseStatus(value = HttpStatus.OK)
 	@RequestMapping(value = "/addUserDetails", method = RequestMethod.POST, consumes = "application/json", produces = "application/json")
-	public BaseResponse addUserDetails(@RequestBody UserDetails user) {
+	public BaseResponse addUserDetails(@RequestBody String id,String name, String address, String emailId) {
 		
 		System.out.println("AddUserDetails Contoller called");
 
 		BaseResponse response = new BaseResponse();
-		UserDetails user1 = addUserDetails.addUserDetails(user);
+		UserDetails user1 = addUserDetails.addUserDetails(id,name,address,emailId);
 		
 		if(GeneralUtil.getInstance().isNotEmptyObject(user1)) {
 			response.setStatus(GeneralConstants.SUCCESS_STATUS);
-			response.setData(user1);
+			response.setData("User Added Successfully");
 			
 		}else {
 			response.setStatus(GeneralConstants.ERROR_STATUS);
@@ -123,7 +123,7 @@ public class WebAppController extends BaseResponse{
 		
 		if(GeneralUtil.getInstance().isNotEmptyObject(user1)) {
 			response.setStatus(GeneralConstants.SUCCESS_STATUS);
-			response.setData(user1);
+			response.setData("User Deleted Successfully");
 			
 		}else {
 			response.setStatus(GeneralConstants.ERROR_STATUS);
