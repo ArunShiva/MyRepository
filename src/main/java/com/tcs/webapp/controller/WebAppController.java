@@ -135,6 +135,8 @@ public class WebAppController extends BaseResponse{
 
 	}
 	
+	@CrossOrigin
+	@ResponseStatus(value = HttpStatus.OK)
 	@GetMapping(value = "/json", produces = MediaType.APPLICATION_JSON_VALUE)
     public String json() {
         return "Greetings Hello World";
